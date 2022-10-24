@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		433566552906FE3A006EBB3F /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433566542906FE3A006EBB3F /* ListViewController.swift */; };
 		43E798CD2905CD2400B100E3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E798CC2905CD2400B100E3 /* AppDelegate.swift */; };
 		43E798CF2905CD2400B100E3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E798CE2905CD2400B100E3 /* SceneDelegate.swift */; };
 		43E798D12905CD2400B100E3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E798D02905CD2400B100E3 /* ViewController.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		433566542906FE3A006EBB3F /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		43E798C92905CD2400B100E3 /* TravelBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TravelBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		43E798CC2905CD2400B100E3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		43E798CE2905CD2400B100E3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -61,6 +63,7 @@
 				43E798CC2905CD2400B100E3 /* AppDelegate.swift */,
 				43E798CE2905CD2400B100E3 /* SceneDelegate.swift */,
 				43E798D02905CD2400B100E3 /* ViewController.swift */,
+				433566542906FE3A006EBB3F /* ListViewController.swift */,
 				43E798D22905CD2400B100E3 /* Main.storyboard */,
 				43E798D82905CD2500B100E3 /* Assets.xcassets */,
 				43E798DA2905CD2500B100E3 /* LaunchScreen.storyboard */,
@@ -144,6 +147,7 @@
 				43E798D72905CD2400B100E3 /* TravelBook.xcdatamodeld in Sources */,
 				43E798D12905CD2400B100E3 /* ViewController.swift in Sources */,
 				43E798CD2905CD2400B100E3 /* AppDelegate.swift in Sources */,
+				433566552906FE3A006EBB3F /* ListViewController.swift in Sources */,
 				43E798CF2905CD2400B100E3 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -296,6 +300,7 @@
 				DEVELOPMENT_TEAM = C7T7MNSP5C;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = TravelBook/Info.plist;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "To access your location";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -324,6 +329,7 @@
 				DEVELOPMENT_TEAM = C7T7MNSP5C;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = TravelBook/Info.plist;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "To access your location";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
