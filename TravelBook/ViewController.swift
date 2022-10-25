@@ -201,11 +201,9 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
         if selectedTitle != "" {
             
             
-            var requestLocation = CLLocation(latitude: annotationLatitude, longitude: annotationLongitude)
+            let requestLocation = CLLocation(latitude: annotationLatitude, longitude: annotationLongitude)
             
-            CLGeocoder().reverseGeocodeLocation(requestLocation) {
-                
-                (placeMarks, error) in
+            CLGeocoder().reverseGeocodeLocation(requestLocation) { (placeMarks, error) in
                 
                 if let placeMark = placeMarks {
                     if placeMark.count > 0 {
@@ -213,22 +211,17 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
                         let item = MKMapItem(placemark: newPlaceMark)
                         item.name = self.annotationTitle
                         
-                        let launchOptions = [MKLaunchOptionsDirectionsModeKey:MKLaunchOptionsDirectionsModeKey]
+                        let launchOptions = [MKLaunchOptionsDirectionsModeKey:MKLaunchOptionsDirectionsModeDriving]
                         item.openInMaps(launchOptions: launchOptions)
                         
                     }
+                } else {
+                    print("Error : \(error?.localizedDescription)")
                 }
-                
-               
+            
             }
-            
-            
-            
+         
         }
-        
-        
-
-
 
     }
 
